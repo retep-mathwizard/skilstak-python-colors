@@ -112,12 +112,6 @@ def multi(text):
         buf += rc() + char + x
     return buf
 
-def clear_screen():
-    """(Deprecated) Clears the screen"""
-    print(clear,end='')
-cs = clear_screen
-clears = clear_screen
-
 if __name__ == '__main__':
     print(clear)
     print(base03 + 'Base03' + reset, end=' ')
