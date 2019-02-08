@@ -1,7 +1,6 @@
 """Solarized color terminal.
 This module contains some mappings for the ANSI terminal escapes support
 the 16 colors of the Solarized color palette created by Ethan Schoonover.
-Copied from `https://github.com/tslnc04/python-projects-2/colors.py`
 """
 
 base03  = '\033[1;30m'
@@ -112,34 +111,3 @@ def multi(text):
         buf += rc() + char + x
     return buf
 
-if __name__ == '__main__':
-    print(clear)
-    print(base03 + 'Base03' + reset, end=' ')
-    print(base02 + 'Base02' + reset, end=' ')
-    print(base01 + 'Base01' + reset, end=' ')
-    print(base00 + 'Base00' + reset, end=' ')
-    print(base0 + 'Base0' + reset, end=' ')
-    print(base1 + 'Base1' + reset, end=' ')
-    print(base2 + 'Base2' + reset, end=' ')
-    print(base3 + 'Base3' + reset, end=' ')
-
-    print()
-
-    print(yellow + 'Yellow' + reset, end=' ')
-    print(orange + 'Orange' + reset, end=' ')
-    print(red + 'Red' + reset, end=' ')
-    print(magenta + 'Magenta' + reset, end=' ')
-    print(violet + 'Violet' + reset, end=' ')
-    print(blue + 'Blue' + reset, end=' ')
-    print(cyan + 'Cyan' + reset, end=' ')
-    print(green + 'Green' + reset, end=' ')
-
-    print()
-
-    for count in range(7):
-        print(random_color() + 'Random' + reset, end=' ')
-    print()
-
-    print()
-
-    print(multi("multicolor"))
